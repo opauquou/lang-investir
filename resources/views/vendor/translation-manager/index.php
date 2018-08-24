@@ -189,10 +189,10 @@
             <tr>
                 <th width="15%">Key</th>
                 <?php foreach ($locales as $locale): ?>
-                    <th><?= $locale ?></th>
+                    <th width="40%"><?= $locale ?></th>
                 <?php endforeach; ?>
                 <?php if ($deleteEnabled): ?>
-                    <th>&nbsp;</th>
+                    <th width="35%">&nbsp;</th>
                 <?php endif; ?>
             </tr>
             </thead>
