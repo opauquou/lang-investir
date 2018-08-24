@@ -35,7 +35,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li style="display: inline-block; width: auto; margin-right: 15px;"><a href="{{ route('home') }}">Accueil</a></li>
-                        @if(Auth::user()->is_admin())
+                        @if(Auth::check() && Auth::user()->is_admin())
                             <li style="display: inline-block; width: auto; margin-right: 15px;">
                                 <a href="{{ url('/translations') }}">Traduction</a>
                             </li>
